@@ -51,8 +51,8 @@ if any(cmd in sys.argv for cmd in ("install", "develop")):
 _deps = [
     f"cuda-python{get_cuda_constraint()}",
     "xformers==0.0.30",
-    "diffusers @ git+https://github.com/varshith15/diffusers.git@3e3b72f557e91546894340edabc845e894f00922",
-    "cuda-link @ https://github.com/forkni/cuda-link/releases/download/v1.12.2/cuda_link-1.12.2-cp311-cp311-win_amd64.whl ; sys_platform == 'win32' and python_version == \"3.11\"",
+    "diffusers @ git+https://github.com/LucaBiada/diffusers.git@3e3b72f557e91546894340edabc845e894f00922",
+    "cuda-link @ https://github.com/LucaBiada/cuda-link/releases/download/v1.12.2/cuda_link-1.12.2-cp311-cp311-win_amd64.whl ; sys_platform == 'win32' and python_version == \"3.11\"",
     "transformers==4.56.0",
     "accelerate==1.13.0",
     "huggingface_hub==0.35.0",
@@ -75,7 +75,7 @@ _deps = [
     "pywin32==311;sys_platform == 'win32'",
     "onnx-graphsurgeon==0.6.1",
     "controlnet-aux==0.0.10",
-    "diffusers-ipadapter @ git+https://github.com/livepeer/Diffusers_IPAdapter.git@405f87da42932e30bd55ee8dca3ce502d7834a99",
+    "diffusers-ipadapter @ git+https://github.com/LucaBiada/Diffusers_IPAdapter.git@405f87da42932e30bd55ee8dca3ce502d7834a99",
     "mediapipe==0.10.21",
     "insightface==0.7.3",
     # We can't really pin torch version as it depends on CUDA, but we check if it's pre-installed above
